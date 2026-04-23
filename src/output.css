@@ -173,6 +173,9 @@
   .h-\[45px\] {
     height: 45px;
   }
+  .h-\[50px\] {
+    height: 50px;
+  }
   .h-\[100px\] {
     height: 100px;
   }
@@ -184,6 +187,9 @@
   }
   .w-\[232px\] {
     width: 232px;
+  }
+  .w-full {
+    width: 100%;
   }
   .max-w-\[1200px\] {
     max-width: 1200px;
@@ -203,8 +209,14 @@
   .justify-between {
     justify-content: space-between;
   }
+  .justify-center {
+    justify-content: center;
+  }
   .gap-\[20px\] {
     gap: 20px;
+  }
+  .gap-\[30px\] {
+    gap: 30px;
   }
   .rounded-3xl {
     border-radius: var(--radius-3xl);
@@ -219,6 +231,9 @@
   .bg-\[\#212121\] {
     background-color: #212121;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[\#fff\] {
     color: #fff;
   }
@@ -231,6 +246,41 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .hover\:text-\[\#\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #;
+      }
+    }
+  }
+  .hover\:text-\[\#fff\] {
+    &:hover {
+      @media (hover: hover) {
+        color: #fff;
+      }
+    }
+  }
+  .hover\:text-\[biege\] {
+    &:hover {
+      @media (hover: hover) {
+        color: biege;
+      }
+    }
+  }
+  .hover\:text-\[black\] {
+    &:hover {
+      @media (hover: hover) {
+        color: black;
+      }
+    }
+  }
+  .hover\:text-\[violet\] {
+    &:hover {
+      @media (hover: hover) {
+        color: violet;
+      }
+    }
   }
 }
 @property --tw-border-style {
