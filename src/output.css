@@ -170,6 +170,9 @@
   .table {
     display: table;
   }
+  .h-\[15px\] {
+    height: 15px;
+  }
   .h-\[45px\] {
     height: 45px;
   }
@@ -178,6 +181,24 @@
   }
   .h-\[100px\] {
     height: 100px;
+  }
+  .h-\[300px\] {
+    height: 300px;
+  }
+  .h-\[560px\] {
+    height: 560px;
+  }
+  .h-\[580px\] {
+    height: 580px;
+  }
+  .h-\[600px\] {
+    height: 600px;
+  }
+  .h-\[750px\] {
+    height: 750px;
+  }
+  .w-\[90px\] {
+    width: 90px;
   }
   .w-\[200ppx\] {
     width: 200ppx;
@@ -200,11 +221,17 @@
   .resize {
     resize: both;
   }
+  .flex-col {
+    flex-direction: column;
+  }
   .flex-row {
     flex-direction: row;
   }
   .items-center {
     align-items: center;
+  }
+  .items-end {
+    align-items: flex-end;
   }
   .justify-between {
     justify-content: space-between;
@@ -230,6 +257,30 @@
   }
   .bg-\[\#212121\] {
     background-color: #212121;
+  }
+  .bg-\[url\] {
+    background-color: url;
+  }
+  .bg-\[url\(\'\'\)\] {
+    background-image: url('');
+  }
+  .bg-\[url\(\'\.\.\/\'\)\] {
+    background-image: url('../');
+  }
+  .bg-\[url\(\'\.\.\/image4\.png\'\)\] {
+    background-image: url('../image4.png');
+  }
+  .bg-\[url\(\'\.\/image4\.png\'\)\] {
+    background-image: url('./image4.png');
+  }
+  .bg-contain {
+    background-size: contain;
+  }
+  .bg-cover {
+    background-size: cover;
+  }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
   }
   .text-\[20px\] {
     font-size: 20px;
