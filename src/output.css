@@ -7,6 +7,8 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --radius-3xl: 1.5rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -164,6 +166,27 @@
   .m-auto {
     margin: auto;
   }
+  .mt-\[100px\] {
+    margin-top: 100px;
+  }
+  .mt-\[200px\] {
+    margin-top: 200px;
+  }
+  .ml-\[50px\] {
+    margin-left: 50px;
+  }
+  .ml-\[90px\] {
+    margin-left: 90px;
+  }
+  .ml-\[130px\] {
+    margin-left: 130px;
+  }
+  .ml-\[150px\] {
+    margin-left: 150px;
+  }
+  .ml-\[155px\] {
+    margin-left: 155px;
+  }
   .flex {
     display: flex;
   }
@@ -196,6 +219,9 @@
   }
   .h-\[750px\] {
     height: 750px;
+  }
+  .h-\[2455px\] {
+    height: 2455px;
   }
   .w-\[90px\] {
     width: 90px;
@@ -238,6 +264,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-\[15px\] {
+    gap: 15px;
   }
   .gap-\[20px\] {
     gap: 20px;
@@ -282,8 +311,34 @@
   .bg-no-repeat {
     background-repeat: no-repeat;
   }
+  .text-center {
+    text-align: center;
+  }
   .text-\[20px\] {
     font-size: 20px;
+  }
+  .text-\[25px\] {
+    font-size: 25px;
+  }
+  .text-\[60px\] {
+    font-size: 60px;
+  }
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .font-semibold {
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+  }
+  .whitespace-pre {
+    white-space: pre;
+  }
+  .text-\[\#9B6D44\] {
+    color: #9B6D44;
+  }
+  .text-\[\#AEAEAE\] {
+    color: #AEAEAE;
   }
   .text-\[\#fff\] {
     color: #fff;
@@ -339,6 +394,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-font-weight {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-outline-style {
   syntax: "*";
   inherits: false;
@@ -348,6 +407,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-font-weight: initial;
       --tw-outline-style: solid;
     }
   }
